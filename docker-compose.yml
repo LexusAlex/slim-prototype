@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+    nginx-debian:
+        build:
+            context: ./infrastructure/development/docker/nginx-debian
+            dockerfile: Dockerfile
+        ports:
+            -   "80:80"
+        volumes:
+            -   ./:/slim
+        depends_on:
+            -   php-fpm-debian
+
+    php-fpm-debian:
+        build:
+            context: ./infrastructure/development/docker/php-fpm-debian
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/slim
+
+    php-cli-debian:
+        build:
+            context: ./infrastructure/development/docker/php-cli-debian
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/slim
+
+    mysql-debian:
+        image: mysql:8.0
+        environment:
+            MYSQL_USER: slim
+            MYSQL_PASSWORD: slim
+            MYSQL_ROOT_PASSWORD: slim
+            MYSQL_DATABASE: slim
+        volumes:
+            - mysql:/var/lib/mysql
+        ports:
+            - "3306:3306"
+volumes:
+    mysql:

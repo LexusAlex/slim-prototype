@@ -1,0 +1,20 @@
+ssh root@192.168.88.210
+
+docker-compose run --rm php-cli-debian composer init
+docker-compose run --rm php-cli-debian composer require slim/slim slim/psr7
+
+…or create a new repository on the command line
+
+echo "# slim-prototype" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:LexusAlex/slim-prototype.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:LexusAlex/slim-prototype.git
+git branch -M main
+git push -u origin main

@@ -1,0 +1,7 @@
+all:
+    hosts:
+        debian_pure_2_test:
+            ansible_connection: ssh
+            ansible_user: root
+            ansible_host: 192.168.122.132
+            ansible_port: 22

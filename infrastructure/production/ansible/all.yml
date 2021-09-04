@@ -1,0 +1,13 @@
+---
+- name: All config
+  hosts: all
+  remote_user: root
+  vars_files:
+    - vars/vars_prod.yml
+    #- vars/vars_private.yml
+  roles:
+     #- common
+     #- php
+     - nginx
+    #- postgresq
+    # - project
