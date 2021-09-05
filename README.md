@@ -1,4 +1,4 @@
-Slim prototype
+Slim prototype - для создания проектов на базе Slim Framework 4
 
 Локально : docker
 
