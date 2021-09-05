@@ -24,3 +24,4 @@
       - ca-certificates
       - apt-transport-https
       - sudo
+      - git

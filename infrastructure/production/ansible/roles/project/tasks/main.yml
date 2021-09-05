@@ -1,0 +1,21 @@
+---
+- name: Add user deploy
+  ansible.builtin.user:
+    name: deploy
+    comment: Deploy
+    uid: 1001
+
+- name: Creates directory on project
+  file:
+    path: /var/www
+    state: directory
+    owner: deploy
+    group: deploy
+    mode: 0775
+
+- name: Git clone project
+  become: yes
+  become_user: deploy
+  ansible.builtin.git:
+    repo: https://github.com/LexusAlex/slim-prototype.git
+    dest: /var/www/slim

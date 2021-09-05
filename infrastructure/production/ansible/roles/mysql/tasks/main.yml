@@ -1,0 +1,31 @@
+---
+
+- name: add key
+  shell: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 8C718D3B5072E1F5
+
+- name: add apt repo
+  shell: echo 'deb http://repo.mysql.com/apt/debian/ bullseye mysql-8.0' > /etc/apt/sources.list.d/mysql.list
+
+- name: install mysql 8
+  apt:
+    name: mysql-server
+    update_cache: yes
+    state: latest
+
+- name: "Install ansible python3 mysql dependency"
+  apt:
+    name: python3-mysqldb
+    state: latest
+
+# Реальные секретные с прода хранить и распространять в переменных окружения
+- mysql_user:
+    name: slim
+    password: slim
+    append_privs: true
+    priv: '*.*:ALL,GRANT'
+    state: present
+
+- name: Create a new database with name 'slim'
+  community.mysql.mysql_db:
+    name: slim
+    state: present

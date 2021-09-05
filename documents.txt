@@ -18,3 +18,8 @@ git push -u origin main
 git remote add origin git@github.com:LexusAlex/slim-prototype.git
 git branch -M main
 git push -u origin main
+
+https://dev.mysql.com/doc/refman/8.0/en/linux-installation-debian.html
+
+
+RUN echo 'deb http://repo.mysql.com/apt/debian/ bullseye mysql-8.0' > /etc/apt/sources.list.d/mysql.list

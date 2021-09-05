@@ -1,0 +1,13 @@
+---
+- name: pull latest changes
+  become_user: deploy
+  shell: git pull origin main
+  args:
+    chdir: "/var/www/slim/"
+
+- name: composer update
+  become: yes
+  become_user: deploy
+  shell: composer update
+  args:
+    chdir: "/var/www/slim/"

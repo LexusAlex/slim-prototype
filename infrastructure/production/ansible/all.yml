@@ -6,8 +6,9 @@
     - vars/vars_prod.yml
     #- vars/vars_private.yml
   roles:
-     #- common
-     #- php
-     - nginx
-    #- postgresq
-    # - project
+     # - common
+     # - php
+     # - nginx
+     # - mysql
+     # - project
+     # - deploy
