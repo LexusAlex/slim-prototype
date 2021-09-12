@@ -28,3 +28,9 @@ ansible-install:
 # Выключить сервера
 ansible-poweroff:
 	ansible -m shell -a "init 0" all -i infrastructure/production/ansible/inventory/hosts.yml
+# Деплой
+ansible-deploy:
+	ansible-playbook -i infrastructure/production/ansible/inventory/hosts.yml infrastructure/production/ansible/all.yml -t deploy
+# Настройка проекта
+ansible-project:
+	ansible-playbook -i infrastructure/production/ansible/inventory/hosts.yml infrastructure/production/ansible/all.yml -t project

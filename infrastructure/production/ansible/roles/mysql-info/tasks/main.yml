@@ -1,0 +1,5 @@
+---
+# ansible -m mysql_info -a 'filter=databases,users' all -i infrastructure/production/ansible/inventory/hosts.yml
+- name: Collect all possible information using passwordless root access
+  community.mysql.mysql_info:
+      login_user: root

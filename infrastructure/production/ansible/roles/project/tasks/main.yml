@@ -10,12 +10,13 @@
     path: /var/www
     state: directory
     owner: deploy
+    recurse : yes
     group: deploy
     mode: 0775
 
 - name: Git clone project
-  become: yes
-  become_user: deploy
   ansible.builtin.git:
     repo: https://github.com/LexusAlex/slim-prototype.git
     dest: /var/www/slim
+  become: yes
+  become_user: deploy

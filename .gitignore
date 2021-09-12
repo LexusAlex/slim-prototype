@@ -1,2 +1,3 @@
 vendor
 infrastructure/production/ansible/inventory/hosts.yml
+infrastructure/production/ansible/vars/vars_prod_private.yml
