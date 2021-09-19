@@ -6,10 +6,11 @@
     - vars/vars_prod.yml
     - vars/vars_prod_private.yml
   roles:
-    - { role: common, tags: common}
-    - { role: php, tags: php}
-    - { role: nginx, tags: nginx}
-    - { role: mysql, tags: mysql}
-    - { role: mysql-info, tags: mysql-info}
-    - { role: project, tags: project}
-    - { role: deploy, tags: deploy}
+    #- { role: common, tags: common}
+    #- { role: php, tags: php}
+    #- { role: nginx, tags: nginx}
+    #- { role: mysql, tags: mysql}
+    #- { role: mysql-info, tags: mysql-info}
+    #- { role: project, tags: project}
+    #- { role: deploy, tags: deploy}
+    #- { role: env, tags: env}

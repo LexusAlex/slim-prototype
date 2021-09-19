@@ -1,0 +1,9 @@
+---
+- name: set env
+  blockinfile:
+    path: /etc/environment
+    backup: yes
+    block: |
+      MYSQL_LOGIN: "{{ mysql_application_login }}"
+      MYSQL_PASSWORD: "{{ mysql_application_password }}"
+      MYSQL_DB: "{{ mysql_application_db }}"

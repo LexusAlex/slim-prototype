@@ -16,7 +16,7 @@
 
 - name: Git clone project
   ansible.builtin.git:
-    repo: https://github.com/LexusAlex/slim-prototype.git
+    repo: '{{ repo }}'
     dest: /var/www/slim
   become: yes
   become_user: deploy
