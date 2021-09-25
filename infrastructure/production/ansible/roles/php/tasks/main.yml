@@ -15,6 +15,7 @@
 - name: install of list package php
   apt:
     name: "{{ packages }}"
+    state: latest
   vars:
     packages:
       - "php{{ php_version }}"

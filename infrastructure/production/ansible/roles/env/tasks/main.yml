@@ -1,9 +1,15 @@
 ---
 - name: set env
   blockinfile:
-    path: /etc/environment
+    path: /etc/php/{{ php_version }}/fpm/pool.d/www.conf
     backup: yes
+    marker: ;{mark}
     block: |
-      MYSQL_LOGIN: "{{ mysql_application_login }}"
-      MYSQL_PASSWORD: "{{ mysql_application_password }}"
-      MYSQL_DB: "{{ mysql_application_db }}"
+      env[MYSQL_LOGIN] = {{ mysql_application_login }}
+      env[MYSQL_PASSWORD] = {{ mysql_application_password }}
+      env[MYSQL_DB] = {{ mysql_application_db }}
+
+- name: restart phpfpm
+  service:
+    name: php8.0-fpm
+    state: restarted
