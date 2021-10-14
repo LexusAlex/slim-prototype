@@ -41,6 +41,7 @@
     src: www.conf
     dest: "/etc/php/{{ php_version }}/fpm/pool.d/"
     mode: 0755
+    force: no
   notify: restart phpfpm
 
 - name: enable service php-fpm
