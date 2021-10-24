@@ -5,7 +5,7 @@ Slim prototype - для создания проектов на базе Slim Fra
 - php 8.0.11 (23.09.2021) - [https://github.com/php/php-src/tags](https://github.com/php/php-src/tags)
 - composer 2.1.9 (05.10.2021) - [https://github.com/composer/composer/tags](https://github.com/composer/composer/tags)
 - nginx 1.21.3 (07.09.2021) - [https://github.com/nginx/nginx/tags](https://github.com/nginx/nginx/tags)
-- mysql 8.0.26 (20.07.2021) - [https://github.com/mysql/mysql-server/tags](https://github.com/mysql/mysql-server/tags)
+- mysql 8.0.27 (06.10.2021) - [https://github.com/mysql/mysql-server/tags](https://github.com/mysql/mysql-server/tags)
 
 Локально : docker
 - docker 20.10.9 (04.10.2021) - [https://github.com/docker/cli/tags](https://github.com/docker/cli/tags)
