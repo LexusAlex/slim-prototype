@@ -12,7 +12,6 @@
     owner: deploy
     recurse : yes
     group: deploy
-    mode: 0775
 
 - name: Git clone project
   ansible.builtin.git:
