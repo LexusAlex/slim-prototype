@@ -26,3 +26,7 @@ RUN echo 'deb http://repo.mysql.com/apt/debian/ bullseye mysql-8.0' > /etc/apt/s
 
 
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
+
+problem
+
+https://github.com/composer/composer/issues/10294

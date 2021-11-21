@@ -2,13 +2,13 @@ Slim prototype - для создания проектов на базе Slim Fra
 
 Версии ПО на сервере:
 
-- php 8.0.12 (22.10.2021) - [https://github.com/php/php-src/tags](https://github.com/php/php-src/tags)
-- composer 2.1.11 (02.11.2021) - [https://github.com/composer/composer/tags](https://github.com/composer/composer/tags)
+- php 8.0.13 (16.11.2021) - [https://github.com/php/php-src/tags](https://github.com/php/php-src/tags)
+- composer 2.1.12 (09.11.2021) - [https://github.com/composer/composer/tags](https://github.com/composer/composer/tags)
 - nginx 1.21.4 (02.11.2021) - [https://github.com/nginx/nginx/tags](https://github.com/nginx/nginx/tags)
 - mysql 8.0.27 (06.10.2021) - [https://github.com/mysql/mysql-server/tags](https://github.com/mysql/mysql-server/tags)
 
 Локально : docker
-- docker 20.10.10 (25.10.2021) - [https://github.com/docker/cli/tags](https://github.com/docker/cli/tags)
+- docker 20.10.11 (18.11.2021) - [https://github.com/docker/cli/tags](https://github.com/docker/cli/tags)
 - docker-compose 1.29.2 (10.05.2021) [https://github.com/docker/compose/tags](https://github.com/docker/compose/tags) 
 - docker-compose 2.1.0 (03.11.2021) [Установка](https://docs.docker.com/compose/cli-command/#install-on-linux) (`docker compose up -d` - запуск контейнеров)
 - `make docker-up` - запуск контейнеров

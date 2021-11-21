@@ -12,6 +12,19 @@
   apt:
     update_cache: yes
 
+- name: install deps package
+  apt:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - libargon2-1
+      - libidn2-0
+      - libpcre2-8-0
+      - libpcre3
+      - libxml2
+      - libzstd1
+
 - name: install of list package php
   apt:
     name: "{{ packages }}"
