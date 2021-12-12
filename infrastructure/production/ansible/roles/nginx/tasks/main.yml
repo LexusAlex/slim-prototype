@@ -46,6 +46,13 @@
     mode: 0755
   notify: restart nginx
 
+- name: copy main conf file nginx
+  copy:
+    src: nginx.conf
+    dest: /etc/nginx
+    mode: 0755
+  notify: restart nginx
+
 - name: start nginx
   service:
     name: nginx

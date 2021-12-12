@@ -8,6 +8,7 @@
   roles:
    - { role: common, tags: common}
    - { role: php, tags: php}
+   - { role: php8.1, tags: php8.1}
    - { role: nginx, tags: nginx}
    - { role: mysql, tags: mysql}
    - { role: mysql-info, tags: mysql-info}

@@ -1,4 +1,4 @@
 ---
-php_version: 8.0
-php_package: php8.0
+php_version: 8.1
+php_package: php8.1
 repo: https://github.com/LexusAlex/slim-prototype.git

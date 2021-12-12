@@ -45,6 +45,8 @@ ansible-deploy:
 	ansible-playbook -i infrastructure/production/ansible/inventory/hosts.yml infrastructure/production/ansible/all.yml -t deploy
 ansible-php:
 	ansible-playbook -i infrastructure/production/ansible/inventory/hosts.yml infrastructure/production/ansible/all.yml -t php
+ansible-php8.1:
+	ansible-playbook -i infrastructure/production/ansible/inventory/hosts.yml infrastructure/production/ansible/all.yml -t php8.1
 ansible-nginx:
 	ansible-playbook -i infrastructure/production/ansible/inventory/hosts.yml infrastructure/production/ansible/all.yml -t nginx
 # Настройка проекта
